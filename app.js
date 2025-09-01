@@ -16,7 +16,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     if (id.length > 1 && document.querySelector(id)) {
       e.preventDefault();
       document.querySelector(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
-      // Close mobile menu after click
       if (menu && menu.classList.contains('show')) {
         menu.classList.remove('show');
         navToggle.setAttribute('aria-expanded', 'false');

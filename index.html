@@ -5,23 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Inkspire Publishing — The Seeds of Reality</title>
-  <meta name="description" content="Inkspire Publishing — Independent publisher for thoughtful, cross-genre works. Featured title: The Seeds of Reality." />
+  <meta name="description" content="The Seeds of Reality — by CT & AT. A reflective, modern book on clarity, discipline, and living with intention." />
   <meta name="theme-color" content="#0E2242" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Inkspire Publishing — The Seeds of Reality" />
-  <meta property="og:description" content="Independent publisher for thoughtful, cross-genre works. Featured title: The Seeds of Reality." />
-  <meta property="og:type" content="website" />
+  <meta property="og:title" content="The Seeds of Reality — Inkspire Publishing" />
+  <meta property="og:description" content="A reflective, modern book on clarity, discipline, and living with intention." />
+  <meta property="og:type" content="book" />
   <meta property="og:image" content="assets/og-cover.jpg" />
-  <meta property="og:url" content="https://inkspirepublishing.com/" />
+  <meta property="og:url" content="https://inkspire-weld.vercel.app/" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Inkspire Publishing — The Seeds of Reality" />
-  <meta name="twitter:description" content="Independent publisher for thoughtful, cross-genre works. Featured title: The Seeds of Reality." />
+  <meta name="twitter:title" content="The Seeds of Reality — Inkspire Publishing" />
+  <meta name="twitter:description" content="A reflective, modern book on clarity, discipline, and living with intention." />
   <meta name="twitter:image" content="assets/og-cover.jpg" />
 
-  <!-- Favicons (replace with your own files in /assets) -->
+  <!-- Favicons -->
   <link rel="icon" href="assets/favicon.ico" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180" />
 
@@ -30,16 +30,54 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- JSON-LD Structured Data (Book + Organization) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Inkspire Publishing",
+        "url": "https://inkspire-weld.vercel.app/",
+        "logo": "https://inkspire-weld.vercel.app/assets/og-cover.jpg",
+        "sameAs": [
+          "https://www.instagram.com/InkspirePublishing",
+          "https://www.facebook.com/InkspirePublishing",
+          "https://www.linkedin.com/company/inkspirepublishing"
+        ]
+      },
+      {
+        "@type": "Book",
+        "name": "The Seeds of Reality",
+        "author": [
+          {"@type": "Person", "name": "CT"},
+          {"@type": "Person", "name": "AT"}
+        ],
+        "bookFormat": "https://schema.org/EBook",
+        "inLanguage": "en",
+        "publisher": {"@type": "Organization", "name": "Inkspire Publishing"},
+        "image": "https://inkspire-weld.vercel.app/assets/og-cover.jpg",
+        "description": "A reflective, modern book on clarity, discipline, and living with intention.",
+        "offers": {
+          "@type": "Offer",
+          "url": "YOUR_AMAZON_LINK",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <!-- Skip link for accessibility -->
+  <!-- Skip link -->
   <a class="skip" href="#main">Skip to content</a>
 
-  <!-- Header / Nav -->
+  <!-- Header -->
   <header class="site-header" role="banner">
     <div class="container header-inner">
       <a class="brand" href="#" aria-label="Inkspire Publishing Home">
-        <!-- Inline logo icon (Ink + Spark) -->
         <svg class="brand-icon" width="28" height="36" viewBox="0 0 48 64" aria-hidden="true">
           <g fill="none" fill-rule="evenodd">
             <path d="M24 2c8 9 8 17 0 24C16 19 16 11 24 2z" fill="#D4A441"/>
@@ -57,7 +95,7 @@
           <li><a href="#book">Featured Book</a></li>
           <li><a href="#authors">Authors</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li class="buy"><a class="btn primary" href="#" target="_blank" rel="noopener">Buy on Amazon</a></li>
+          <li class="buy"><a class="btn primary" href="YOUR_AMAZON_LINK" target="_blank" rel="noopener">Buy on Amazon</a></li>
         </ul>
       </nav>
     </div>
@@ -68,30 +106,22 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="badge" aria-label="Publisher descriptor">INKSPIRE • PUBLISHING HOUSE</p>
+          <p class="badge">INKSPIRE • PUBLISHING HOUSE</p>
           <h1 class="hero-title">The Seeds of Reality</h1>
-          <p class="sub">
-            A reflective, modern book on clarity, discipline, and living with intention.
-          </p>
+          <p class="sub">A reflective, modern book on clarity, discipline, and living with intention.</p>
           <div class="hero-ctas">
-            <a class="btn primary" href="#" target="_blank" rel="noopener">Buy on Amazon</a>
+            <a class="btn primary" href="YOUR_AMAZON_LINK" target="_blank" rel="noopener">Buy on Amazon</a>
             <a class="btn" href="assets/The-Seeds-of-Reality-Sample.pdf" target="_blank" rel="noopener">Read a Sample (PDF)</a>
-          </div>
-          <div class="brand-lockup">
-            <span class="dot" aria-hidden="true"></span>
-            <span class="lockup-text">INKSPIRE PUBLISHING</span>
           </div>
         </div>
 
-        <!-- Minimal “book” mock using CSS only -->
+        <!-- CSS book mockup -->
         <div class="book-card" aria-label="Book mockup">
           <div class="book-face">
             <div class="book-title">THE SEEDS OF REALITY</div>
             <div class="book-meta">by CT • Inkspire Books</div>
           </div>
-          <div class="book-spine">
-            <span>THE SEEDS OF REALITY</span>
-          </div>
+          <div class="book-spine"><span>THE SEEDS OF REALITY</span></div>
         </div>
       </div>
     </section>
@@ -101,18 +131,11 @@
       <div class="container grid-3">
         <div class="card">
           <h2 class="h">About Inkspire</h2>
-          <p class="p">
-            An independent publisher for thoughtful, cross-genre works—crafted with clarity and timeless design.
-            We publish across non-fiction, practical philosophy, and select fiction with strong ideas.
-          </p>
+          <p class="p">An independent publisher for thoughtful, cross-genre works—crafted with clarity and timeless design.</p>
         </div>
         <div class="card">
           <h2 class="h">What We Value</h2>
-          <p class="p">
-            • Author-centric process<br/>
-            • Minimal covers, global distribution<br/>
-            • Clean typography, lasting impact
-          </p>
+          <p class="p">• Author-centric process<br>• Minimal covers, global distribution<br>• Clean typography, lasting impact</p>
         </div>
         <div class="card">
           <h2 class="h">Follow</h2>
@@ -121,7 +144,7 @@
             <a href="#" aria-label="Instagram">IG</a>
             <a href="#" aria-label="Facebook">FB</a>
             <a href="#" aria-label="LinkedIn">IN</a>
-            <a href="#" aria-label="X (Twitter)">X</a>
+            <a href="#" aria-label="X">X</a>
           </div>
         </div>
       </div>
@@ -133,25 +156,19 @@
         <div class="dual-col">
           <h2 class="h">Featured Book</h2>
           <h3 class="book-h">The Seeds of Reality</h3>
-          <p class="p">
-            A concise, practical guide to noticing reality as it is, building courage, and living awake. 
-            Structured chapters blend narrative insight with clear steps you can apply immediately.
-          </p>
+          <p class="p">A concise, practical guide to noticing reality as it is, building courage, and living awake.</p>
           <div class="hero-ctas">
-            <a class="btn primary" href="#" target="_blank" rel="noopener">Buy on Amazon</a>
+            <a class="btn primary" href="YOUR_AMAZON_LINK" target="_blank" rel="noopener">Buy on Amazon</a>
             <a class="btn" href="assets/The-Seeds-of-Reality-Sample.pdf" target="_blank" rel="noopener">Read a Sample</a>
           </div>
         </div>
         <div class="dual-col">
-          <!-- Reuse the minimal book block -->
           <div class="book-card small" aria-label="Book mockup">
             <div class="book-face">
               <div class="book-title">THE SEEDS OF REALITY</div>
               <div class="book-meta">by CT • Inkspire Books</div>
             </div>
-            <div class="book-spine">
-              <span>THE SEEDS OF REALITY</span>
-            </div>
+            <div class="book-spine"><span>THE SEEDS OF REALITY</span></div>
           </div>
         </div>
       </div>
@@ -162,17 +179,12 @@
       <div class="container grid-2">
         <div class="card">
           <h2 class="h">Authors</h2>
-          <p class="p">
-            <strong>CT</strong> — Builder and writer focused on practical, grounded thinking and clear systems.
-          </p>
-          <p class="p">
-            <strong>AT</strong> — Co-author and editor with a broad curiosity across many subjects.
-          </p>
+          <p class="p"><strong>CT</strong> — builder and writer focused on practical, grounded thinking.</p>
+          <p class="p"><strong>AT</strong> — co-author and editor with broad curiosity across subjects.</p>
         </div>
         <div class="card">
           <h2 class="h">Submissions</h2>
           <p class="p">Currently by invitation. General submissions will open in Q4.</p>
-          <p class="p"><em>Stay tuned on social for updates.</em></p>
         </div>
       </div>
     </section>
@@ -208,20 +220,12 @@
   <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
-      <div class="footer-brand">
-        <svg width="20" height="26" viewBox="0 0 48 64" aria-hidden="true">
-          <g fill="none" fill-rule="evenodd">
-            <path d="M24 2c8 9 8 17 0 24C16 19 16 11 24 2z" fill="#D4A441"/>
-            <path d="M18 40h12v10c0 2.2-1.8 4-4 4h-4c-2.2 0-4-1.8-4-4V40z" fill="#0E2242"/>
-            <circle cx="24" cy="44" r="2" fill="#F7F7F7"/>
-          </g>
-        </svg>
-        <span>Inkspire Publishing</span>
-      </div>
+      <div class="footer-brand">Inkspire Publishing</div>
       <div class="legal">© <span id="year"></span> Inkspire Publishing. All rights reserved.</div>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="app.js"></script>
 </body>
 </html>
