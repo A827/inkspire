@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,56 +21,151 @@
   <meta name="twitter:description" content="A reflective, modern book on clarity, discipline, and living with intention." />
   <meta name="twitter:image" content="/assets/og-cover.jpg" />
 
-  <!-- Favicons / App Icons (match your filenames) -->
+  <!-- Favicons / App Icons -->
   <link rel="icon" href="/assets/favicon.ico?v=3" sizes="any">
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=3">
   <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png?v=3">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png?v=3">
   <link rel="manifest" href="/assets/site.webmanifest?v=3">
-  <meta name="theme-color" content="#0E2242">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&family=Montserrat:wght@600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- JSON-LD Structured Data (Book + Organization) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "name": "Inkspire Publishing",
-        "url": "https://inkspire-weld.vercel.app/",
-        "logo": "https://inkspire-weld.vercel.app/assets/og-cover.jpg",
-        "sameAs": [
-          "https://www.instagram.com/InkspirePublishing",
-          "https://www.facebook.com/InkspirePublishing",
-          "https://www.linkedin.com/company/inkspirepublishing"
-        ]
-      },
-      {
-        "@type": "Book",
-        "name": "The Seeds of Reality",
-        "author": [
-          {"@type": "Person", "name": "CT"},
-          {"@type": "Person", "name": "AT"}
-        ],
-        "bookFormat": "https://schema.org/EBook",
-        "inLanguage": "en",
-        "publisher": {"@type": "Organization", "name": "Inkspire Publishing"},
-        "image": "https://inkspire-weld.vercel.app/assets/og-cover.jpg",
-        "description": "A reflective, modern book on clarity, discipline, and living with intention.",
-        "offers": {
-          "@type": "Offer",
-          "url": "YOUR_AMAZON_LINK",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    ]
-  }
-  </script>
+  <link rel="stylesheet" href="/styles.css" />
 </head>
+<body>
+  <!-- Skip link -->
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="Inkspire Publishing Home">
+        <span class="brand-text">Inkspire Publishing</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+        <ul id="menu" class="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#book">Featured Book</a></li>
+          <li><a href="#authors">Authors</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="buy"><a class="btn primary" href="YOUR_AMAZON_LINK" target="_blank" rel="noopener">Buy on Amazon</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main" role="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="badge">INKSPIRE • PUBLISHING HOUSE</p>
+          <h1 class="hero-title">The Seeds of Reality</h1>
+          <p class="sub">A reflective, modern book on clarity, discipline, and living with intention.</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="YOUR_AMAZON_LINK" target="_blank" rel="noopener">Buy on Amazon</a>
+            <a class="btn" href="/assets/The-Seeds-of-Reality-Sample.pdf" target="_blank" rel="noopener">Read a Sample (PDF)</a>
+          </div>
+        </div>
+
+        <!-- Book mock -->
+        <div class="book-card" aria-label="Book mockup">
+          <div class="book-face">
+            <div class="book-title">THE SEEDS OF REALITY</div>
+            <div class="book-meta">by CT • Inkspire Books</div>
+          </div>
+          <div class="book-spine"><span>THE SEEDS OF REALITY</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container grid-3">
+        <div class="card">
+          <h2 class="h">About Inkspire</h2>
+          <p class="p">An independent publisher for thoughtful, cross-genre works—crafted with clarity and timeless design.</p>
+        </div>
+        <div class="card">
+          <h2 class="h">What We Value</h2>
+          <p class="p">• Author-centric process<br/>• Minimal covers, global distribution<br/>• Clean typography, lasting impact</p>
+        </div>
+        <div class="card">
+          <h2 class="h">Follow</h2>
+          <p class="p">@InkspirePublishing</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED BOOK -->
+    <section id="book" class="section alt">
+      <div class="container dual">
+        <div class="dual-col">
+          <h2 class="h">Featured Book</h2>
+          <h3 class="book-h">The Seeds of Reality</h3>
+          <p class="p">A concise, practical guide to noticing reality as it is, building courage, and living awake.</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="YOUR_AMAZON_LINK" target="_blank" rel="noopener">Buy on Amazon</a>
+            <a class="btn" href="/assets/The-Seeds-of-Reality-Sample.pdf" target="_blank" rel="noopener">Read a Sample</a>
+          </div>
+        </div>
+        <div class="dual-col">
+          <div class="book-card small" aria-label="Book mockup">
+            <div class="book-face">
+              <div class="book-title">THE SEEDS OF REALITY</div>
+              <div class="book-meta">by CT • Inkspire Books</div>
+            </div>
+            <div class="book-spine"><span>THE SEEDS OF REALITY</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUTHORS -->
+    <section id="authors" class="section">
+      <div class="container grid-2">
+        <div class="card">
+          <h2 class="h">Authors</h2>
+          <p class="p"><strong>CT</strong> — builder and writer focused on practical, grounded thinking.</p>
+          <p class="p"><strong>AT</strong> — co-author and editor with broad curiosity across subjects.</p>
+        </div>
+        <div class="card">
+          <h2 class="h">Submissions</h2>
+          <p class="p">Currently by invitation. General submissions will open in Q4.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container contact">
+        <div>
+          <h2 class="h">Get in Touch</h2>
+          <p class="p">info@inkspirepublishing.com</p>
+          <p class="p">We usually reply within 2–3 business days.</p>
+        </div>
+        <form class="form" onsubmit="return handleContact(event)" aria-label="Contact form">
+          <label class="label"><span>Name</span><input type="text" name="name" required /></label>
+          <label class="label"><span>Email</span><input type="email" name="email" required /></label>
+          <label class="label"><span>Message</span><textarea name="message" rows="4" required></textarea></label>
+          <button class="btn primary" type="submit">Send</button>
+          <p id="formStatus" class="status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">Inkspire Publishing</div>
+      <div class="legal">© <span id="year"></span> Inkspire Publishing. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
