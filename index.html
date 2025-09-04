@@ -7,13 +7,15 @@
   <title>Inkspire Publishing — The Seeds of Reality</title>
   <meta name="description" content="The Seeds of Reality — by CT & AT. A reflective, modern book on clarity, discipline, and living with intention." />
   <meta name="theme-color" content="#0E2242" />
+  <link rel="canonical" href="https://the-inkspire.com/" />
+  <meta name="robots" content="index, follow" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="The Seeds of Reality — Inkspire Publishing" />
   <meta property="og:description" content="A reflective, modern book on clarity, discipline, and living with intention." />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="/assets/og-cover.jpg" />
-  <meta property="og:url" content="https://inkspire-weld.vercel.app/" />
+  <meta property="og:url" content="https://the-inkspire.com/" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -33,6 +35,37 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="/styles.css" />
+
+  <!-- JSON-LD: Organization + Book -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Inkspire Publishing",
+        "url": "https://the-inkspire.com/",
+        "logo": "https://the-inkspire.com/assets/og-cover.jpg"
+      },
+      {
+        "@type": "Book",
+        "name": "The Seeds of Reality",
+        "author": [
+          {"@type": "Person", "name": "CT"},
+          {"@type": "Person", "name": "AT"}
+        ],
+        "bookFormat": "https://schema.org/EBook",
+        "inLanguage": "en",
+        "publisher": {"@type": "Organization", "name": "Inkspire Publishing"},
+        "image": "https://the-inkspire.com/assets/og-cover.jpg",
+        "description": "A reflective, modern book on clarity, discipline, and living with intention."
+      }
+    ]
+  }
+  </script>
+
+  <!-- Optional analytics (uncomment to enable Plausible) -->
+  <!-- <script defer data-domain="the-inkspire.com" src="https://plausible.io/js/script.js"></script> -->
 </head>
 <body>
   <!-- Skip link -->
@@ -144,7 +177,7 @@
       <div class="container contact">
         <div>
           <h2 class="h">Get in Touch</h2>
-          <p class="p">info@inkspirepublishing.com</p>
+          <p class="p">hello@the-inkspire.com</p>
           <p class="p">We usually reply within 2–3 business days.</p>
         </div>
         <form class="form" onsubmit="return handleContact(event)" aria-label="Contact form">
