@@ -81,6 +81,7 @@
         <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
         <ul id="menu" class="menu">
           <li><a href="#about">About</a></li>
+          <li><a href="#books">Books</a></li><!-- added -->
           <li><a href="#book">Featured Book</a></li>
           <li><a href="#authors">Authors</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -130,6 +131,30 @@
           <h2 class="h">Follow</h2>
           <p class="p">@InkspirePublishing</p>
         </div>
+      </div>
+    </section>
+
+    <!-- BOOKS (multi-book options) -->
+    <section id="books" class="section alt" aria-labelledby="books-heading">
+      <div class="container">
+        <h2 id="books-heading" class="h">Books</h2>
+
+        <!-- Selector -->
+        <div class="book-selector" style="display:flex;gap:.75rem;align-items:center;margin:1rem 0;">
+          <label for="bookSelect" class="label">Choose a book:</label>
+          <select id="bookSelect" class="select" aria-controls="bookDetails">
+            <option value="seeds">The Seeds of Reality</option>
+            <option value="wake">The Wake-Up Call</option>
+            <option value="art">The Art of Getting Along</option>
+          </select>
+        </div>
+
+        <!-- Dynamic details area -->
+        <div id="bookDetails" class="card" style="padding:1rem;" aria-live="polite"></div>
+
+        <!-- Grid -->
+        <h3 class="h" style="margin-top:1.5rem;">Browse All</h3>
+        <div id="bookGrid" class="grid-3"></div>
       </div>
     </section>
 
